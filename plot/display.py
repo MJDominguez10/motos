@@ -13,7 +13,7 @@ from glob import glob
 app = dash.Dash(__name__)
 
 # Define the directory containing the CSV files
-data_folder = '/Users/monkiky/Desktop/motos/data2plot/Dealerships/'
+data_folder = './data2plot/Dealerships/'
 
 # Use glob to get all CSV files in the folder (including subfolders if any)
 file_paths = glob(os.path.join(data_folder, 'dealership_summary_*.csv'))
@@ -62,7 +62,7 @@ print("Grouped Data (Dealership, Date, Bike Count):")
 print(df_grouped.head())
 
 # Step 2: Load and process the cleaned_autotrader_data.csv for bike count by brand and date
-autotrader_data_path = '/Users/monkiky/Desktop/motos_collect/data2plot/cleaned_autotrader_data.csv'
+autotrader_data_path = './data2plot/cleaned_autotrader_data.csv'
 
 # Load the cleaned Autotrader data
 df_autotrader = pd.read_csv(autotrader_data_path)

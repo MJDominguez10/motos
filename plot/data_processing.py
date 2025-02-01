@@ -3,7 +3,7 @@ import pandas as pd
 from glob import glob
 
 # Define the path to the data folder
-data_folder = '/Users/monkiky/Desktop/motos/data2plot/Dealerships/'
+data_folder = './data2plot/Dealerships/'
 
 # Load and process the dealership data
 def load_dealership_data():
@@ -28,7 +28,7 @@ def load_dealership_data():
 # Load and process the Autotrader data
 # data_processing.py
 def load_autotrader_data():
-    autotrader_data_path = '/Users/monkiky/Desktop/motos/data2plot/cleaned_autotrader_data.csv'
+    autotrader_data_path = './data2plot/cleaned_autotrader_data.csv'
     df_autotrader = pd.read_csv(autotrader_data_path)
 
     # Debug: Check the columns to make sure 'Mileage' exists
