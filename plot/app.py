@@ -6,7 +6,9 @@ from dash.dependencies import Input, Output
 from dealership_plot import update_dealership_graph
 from brand_plot import update_brand_graph
 from mileage_price_plot import update_mileage_vs_price
-from year_price_plot import update_year_vs_price  # New Import
+from year_price_plot import update_year_vs_price
+from brand_count_plot import update_brand_count_over_time
+
 
 # Initialize the Dash app
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
