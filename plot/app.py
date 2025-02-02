@@ -1,3 +1,4 @@
+import os
 import dash
 import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc
@@ -106,4 +107,5 @@ def update_year_vs_price_callback(selected_year_range):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    port = int(os.environ.get("PORT", 10000))  # Get PORT from environment
+    app.run_server(host='0.0.0.0', port=port, debug=False)
