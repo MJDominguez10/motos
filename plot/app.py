@@ -15,7 +15,7 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.layout = dbc.Container([
     # Row for the images at the top-left and top-right
     dbc.Row([
-        dbc.Col(html.Img(src='assets/bmw.jpeg', style={'height': '200px', 'width': 'auto'}), width=2),
+        dbc.Col(html.Img(src='assets/bmw.jpg', style={'height': '200px', 'width': 'auto'}), width=2),
         dbc.Col(html.H1("Manolo Dashboard for Motorbikes", className="text-center mb-4"), width=8),
         dbc.Col(html.Img(src='assets/HD.png', style={'height': '200px', 'width': 'auto'}), width=2),
     ], className="mb-4"),
